@@ -10,3 +10,5 @@ yarn.lock
 .prettierignore
 .env.local
 .env
+LICENSE
+.DS_Store
