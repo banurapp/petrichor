@@ -39,9 +39,9 @@
 		"@typescript-eslint/parser": "^4.1.0"
 	},
 	"scripts": {
-		"dev": "next dev -p 9000",
-		"build": "next build",
-		"start": "next start",
+		"dev": "nodemon src/index.ts",
+		"build": "tsc --outDir dist --allowJs",
+		"start": "ts-node src/index.ts",
 		"format": "prettier --single-quote --write './**/*'",
 		"format:check": "prettier --single-quote --check './**/*'",
 		"lint": "eslint \"./**/*.{js,ts,tsx,jsx}\" --quiet --fix",
